@@ -1,12 +1,18 @@
 ---
-{"publish":true,"created":"2025-07-31T14:06:46.485+09:00","modified":"2025-07-31T15:30:34.064+09:00","cssclasses":""}
+{"publish":true,"created":"2025-07-31T14:06:46.485+09:00","modified":"2025-07-31T16:52:54.790+09:00","cssclasses":""}
 ---
 
-
 # Papers
-```
-TABLE
-file.frontmatter.date as "Date",
-file.frontmatter.link as "Link to paper"
-FROM "2. Area/AI/논문" SORT file.frontmatter.date DESC LIMIT 10
-```
+| File                                                                                                                                                                                                                                                                  | Date       | Link to paper                    |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | -------------------------------- |
+| [[2. Area/AI/논문/Disco4D Disentangled 4D Human Generation and Animation from a Single Image\|Disco4D Disentangled 4D Human Generation and Animation from a Single Image]]                                                                                           | 2025-07-29 | https://arxiv.org/abs/2409.17280 |
+| [[2. Area/AI/논문/IDOL Instant Photorealistic 3D Human Creation from a Single Image\|IDOL Instant Photorealistic 3D Human Creation from a Single Image]]                                                                                                             | 2025-07-29 | https://arxiv.org/abs/2412.14963 |
+| [[2. Area/AI/논문/Any6D Model-free 6D Pose Estimation of Novel Objects\|Any6D Model-free 6D Pose Estimation of Novel Objects]]                                                                                                                                       | 2025-07-28 | https://arxiv.org/abs/2503.18673 |
+| [[2. Area/AI/논문/FoundationPose Unified 6D Pose Estimation and Tracking of Novel Objects\|FoundationPose Unified 6D Pose Estimation and Tracking of Novel Objects]]                                                                                                 | 2025-07-15 | https://arxiv.org/abs/2312.08344 |
+| [[2. Area/AI/논문/InstructPix2Pix Learning to Follow Image Editing Instructions\|InstructPix2Pix Learning to Follow Image Editing Instructions]]                                                                                                                     | 2025-07-11 | https://arxiv.org/abs/2211.09800 |
+| [[2. Area/AI/논문/TinyFusion Diffusion Transformers Learned Shallow\|TinyFusion Diffusion Transformers Learned Shallow]]                                                                                                                                             | 2025-07-09 | https://arxiv.org/pdf/2412.01199 |
+| [[2. Area/AI/논문/DreamBooth Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation\|DreamBooth Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation]]                                                                         | 2025-07-01 | https://arxiv.org/abs/2208.12242 |
+| [[2. Area/AI/논문/Text Embedding is Not All You Need Attention Control for Text-to-Image Semantic Alignment with Text Self-Attention Maps\|Text Embedding is Not All You Need Attention Control for Text-to-Image Semantic Alignment with Text Self-Attention Maps]] | 2025-07-01 | https://arxiv.org/abs/2411.15236 |
+| [[2. Area/AI/논문/U-Net Convolutional Networks for Biomedical Image Segmentation\|U-Net Convolutional Networks for Biomedical Image Segmentation]]                                                                                                                   | 2025-07-01 | https://arxiv.org/abs/1505.04597 |
+| [[2. Area/AI/논문/SAM-6D Segment Anything Model Meets Zero-Shot 6D Object Pose Estimation\|SAM-6D Segment Anything Model Meets Zero-Shot 6D Object Pose Estimation]]                                                                                                 | 2025-06-22 | https://arxiv.org/abs/2311.15707 |
+
