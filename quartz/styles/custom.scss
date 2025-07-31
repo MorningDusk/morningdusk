@@ -1,12 +1,7 @@
 @use "./base.scss";
 
 // put your custom CSS here!
-/* "2. Area" 폴더만 숨기고 하위 폴더들은 한 레벨 위로 */
-.explorer .folder-button[data-folderpath*="2. Area"] {
-  display: none !important;
-}
 
-/* 또는 전체 노드 숨기기 */
-.explorer ul li:has(.folder-button[data-folderpath*="2. Area"]) > .folder-button {
+.explorer .folder-button[data-folderpath*="2. Area"] {
   display: none !important;
 }
