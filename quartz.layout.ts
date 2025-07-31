@@ -69,7 +69,14 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      filterFn: (node) => {
+        if (node.displayName == "2. Area" && node.children) {
+          return false
+        }
+        return true
+      }
+    }),
   ],
   right: [],
 }
