@@ -38,7 +38,12 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      filterFn: (node) => {
+        // "2.Area" 폴더를 Explorer에서 숨김
+        return node.displayName !== "2.Area"
+      }
+    }),
   ],
   right: [
     Component.Graph(),
@@ -62,7 +67,12 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      filterFn: (node) => {
+        // "2.Area" 폴더를 Explorer에서 숨김
+        return node.displayName !== "2.Area"
+      }
+    }),
   ],
   right: [],
 }
