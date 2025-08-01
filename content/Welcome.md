@@ -1,18 +1,18 @@
----
-{"publish":true,"created":"2025-07-31T14:06:46.485+09:00","modified":"2025-07-31T16:52:54.790+09:00","cssclasses":""}
----
+```dataviewjs
+// 연구 논문 정보를 테이블로 표시하는 DataviewJS 코드
 
-# Papers
-| File                                                                                                                                                                                                                                                                  | Date       | Link to paper                    |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | -------------------------------- |
-| [[2. Area/AI/논문/Disco4D Disentangled 4D Human Generation and Animation from a Single Image\|Disco4D Disentangled 4D Human Generation and Animation from a Single Image]]                                                                                           | 2025-07-29 | https://arxiv.org/abs/2409.17280 |
-| [[2. Area/AI/논문/IDOL Instant Photorealistic 3D Human Creation from a Single Image\|IDOL Instant Photorealistic 3D Human Creation from a Single Image]]                                                                                                             | 2025-07-29 | https://arxiv.org/abs/2412.14963 |
-| [[2. Area/AI/논문/Any6D Model-free 6D Pose Estimation of Novel Objects\|Any6D Model-free 6D Pose Estimation of Novel Objects]]                                                                                                                                       | 2025-07-28 | https://arxiv.org/abs/2503.18673 |
-| [[2. Area/AI/논문/FoundationPose Unified 6D Pose Estimation and Tracking of Novel Objects\|FoundationPose Unified 6D Pose Estimation and Tracking of Novel Objects]]                                                                                                 | 2025-07-15 | https://arxiv.org/abs/2312.08344 |
-| [[2. Area/AI/논문/InstructPix2Pix Learning to Follow Image Editing Instructions\|InstructPix2Pix Learning to Follow Image Editing Instructions]]                                                                                                                     | 2025-07-11 | https://arxiv.org/abs/2211.09800 |
-| [[2. Area/AI/논문/TinyFusion Diffusion Transformers Learned Shallow\|TinyFusion Diffusion Transformers Learned Shallow]]                                                                                                                                             | 2025-07-09 | https://arxiv.org/pdf/2412.01199 |
-| [[2. Area/AI/논문/DreamBooth Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation\|DreamBooth Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation]]                                                                         | 2025-07-01 | https://arxiv.org/abs/2208.12242 |
-| [[2. Area/AI/논문/Text Embedding is Not All You Need Attention Control for Text-to-Image Semantic Alignment with Text Self-Attention Maps\|Text Embedding is Not All You Need Attention Control for Text-to-Image Semantic Alignment with Text Self-Attention Maps]] | 2025-07-01 | https://arxiv.org/abs/2411.15236 |
-| [[2. Area/AI/논문/U-Net Convolutional Networks for Biomedical Image Segmentation\|U-Net Convolutional Networks for Biomedical Image Segmentation]]                                                                                                                   | 2025-07-01 | https://arxiv.org/abs/1505.04597 |
-| [[2. Area/AI/논문/SAM-6D Segment Anything Model Meets Zero-Shot 6D Object Pose Estimation\|SAM-6D Segment Anything Model Meets Zero-Shot 6D Object Pose Estimation]]                                                                                                 | 2025-06-22 | https://arxiv.org/abs/2311.15707 |
-
+dv.table(
+    ["제목", "링크", "연구 목적", "연구 방법", "결과 변수", "주요 결과"],
+    dv.pages()
+        .where(p => p["연구 목적"] || p["연구 방법"] || p["결과 변수"] || p["주요 결과"]) // 연구 관련 속성이 있는 페이지만 필터링
+        .map(p => [
+            p.file.link,                    // 제목 (노트 제목을 링크로 표시)
+            p.link || "N/A",               // 링크 (frontmatter의 link 속성)
+            p["연구 목적"] || "N/A",        // 연구 목적
+            p["연구 방법"] || "N/A",        // 연구 방법
+            p["결과 변수"] || "N/A",        // 결과 변수
+            p["주요 결과"] || "N/A"         // 주요 결과
+        ])
+        .sort(p => p[0]) // 제목 기준으로 정렬 (선택사항)
+)
+```

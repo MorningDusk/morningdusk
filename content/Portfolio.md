@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"포트폴리오","created":"2025-04-24","modified":"2025-07-31T15:30:39.363+09:00","cssclasses":""}
+{"publish":true,"created":"2025-04-24","modified":"2025-08-01T10:32:38.823+09:00","cssclasses":""}
 ---
 
 # 👩‍💻박민선 프로필
@@ -21,7 +21,7 @@ SKT FLY AI 패기 1팀
 - Unity를 활용한 비주얼노벨 호러 추리 게임
 - 원화 및 개발 참여
 - 현재 개발 중단 상태
-- 원화는 [[4. Archive/Mizar and Alcor Game Sprite & Illustrations/미자르와 알코르의 사건수첩 아트웍스\|여기]]서 확인 가능
+- 원화는 [[Mizar and Alcor Game Sprite & Illustrations/미자르와 알코르의 사건수첩 아트웍스\|여기]]서 확인 가능
 - 코드는 [여기](https://github.com/MorningDusk/Mizar-and-Alcor-Game/tree/main)서 확인 가능
 ## 🏆수상 실적
 2025년 SK텔레콤 FLY AI Challenger 6기 프로젝트 부문 우수상
