@@ -1,12 +1,13 @@
 ---
-{"publish":true,"created":"2025-07-31T14:06:46.485+09:00","modified":"2025-08-01T11:12:26.071+09:00","cssclasses":""}
+{"publish":true,"created":"2025-07-31T14:06:46.485+09:00","modified":"2025-08-01T11:13:41.354+09:00","cssclasses":""}
 ---
 
 # Profile
 [[Portfolio]]
 # Recent Notes
 ``` dataview
-TABLE file.frontmatter.date as "생성 일시"
+TABLE 
+	file.frontmatter.date as "생성 일시"
 WHERE file.frontmatter.publish = true
 SORT file.frontmatter.date DESC
 LIMIT 5
