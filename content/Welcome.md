@@ -1,17 +1,23 @@
 ---
-{"publish":true,"created":"2025-07-31T14:06:46.485+09:00","modified":"2025-08-01T11:13:41.354+09:00","cssclasses":""}
+{"publish":true,"created":"2025-07-31T14:06:46.485+09:00","modified":"2025-08-01T11:16:39.717+09:00","cssclasses":""}
 ---
 
 # Profile
 [[Portfolio]]
 # Recent Notes
-``` dataview
-TABLE 
-	file.frontmatter.date as "생성 일시"
-WHERE file.frontmatter.publish = true
-SORT file.frontmatter.date DESC
-LIMIT 5
-```
+| File                                                                                                                                                                                                                                                          |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[Welcome\|Welcome]]                                                                                                                                                                                                                                       |
+| [[AI/논문/U-Net Convolutional Networks for Biomedical Image Segmentation\|U-Net Convolutional Networks for Biomedical Image Segmentation]]                                                                                                                   |
+| [[AI/논문/TinyFusion Diffusion Transformers Learned Shallow\|TinyFusion Diffusion Transformers Learned Shallow]]                                                                                                                                             |
+| [[AI/논문/Text Embedding is Not All You Need Attention Control for Text-to-Image Semantic Alignment with Text Self-Attention Maps\|Text Embedding is Not All You Need Attention Control for Text-to-Image Semantic Alignment with Text Self-Attention Maps]] |
+| [[AI/논문/SAM-6D Segment Anything Model Meets Zero-Shot 6D Object Pose Estimation\|SAM-6D Segment Anything Model Meets Zero-Shot 6D Object Pose Estimation]]                                                                                                 |
+| [[AI/논문/InstructPix2Pix Learning to Follow Image Editing Instructions\|InstructPix2Pix Learning to Follow Image Editing Instructions]]                                                                                                                     |
+| [[AI/논문/IDOL Instant Photorealistic 3D Human Creation from a Single Image\|IDOL Instant Photorealistic 3D Human Creation from a Single Image]]                                                                                                             |
+| [[AI/논문/FoundationPose Unified 6D Pose Estimation and Tracking of Novel Objects\|FoundationPose Unified 6D Pose Estimation and Tracking of Novel Objects]]                                                                                                 |
+| [[AI/논문/DreamBooth Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation\|DreamBooth Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation]]                                                                         |
+| [[AI/논문/Any6D Model-free 6D Pose Estimation of Novel Objects\|Any6D Model-free 6D Pose Estimation of Novel Objects]]                                                                                                                                       |
+
 # Papers
 | File                                                                                                                                                                | 링크                               | 연구 목적                                                                                                            | 연구 방법                                                                                                                                                                            | 결과 변수                                                                                                                            | 주요 결과                                                                                                                                                                           |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
