@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"U-Net: Convolutional Networks for Biomedical Image Segmentation","created":"2025-07-01","modified":"2025-07-31T16:25:25.972+09:00","tags":["ai","article","cnn","segmentation"],"cssclasses":""}
+{"publish":true,"aliases":"U-Net: Convolutional Networks for Biomedical Image Segmentation","created":"2025-07-01","modified":"2025-08-01T10:53:36.644+09:00","tags":["ai","article","cnn","segmentation"],"cssclasses":""}
 ---
 
 # 1. 의료 영상 분할의 문제점과 해결책

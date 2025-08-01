@@ -1,18 +1,24 @@
-```dataviewjs
-// 연구 논문 정보를 테이블로 표시하는 DataviewJS 코드
+---
+{"publish":true,"created":"2025-07-31T14:06:46.485+09:00","modified":"2025-08-01T11:09:27.316+09:00","cssclasses":""}
+---
 
-dv.table(
-    ["제목", "링크", "연구 목적", "연구 방법", "결과 변수", "주요 결과"],
-    dv.pages()
-        .where(p => p["연구 목적"] || p["연구 방법"] || p["결과 변수"] || p["주요 결과"]) // 연구 관련 속성이 있는 페이지만 필터링
-        .map(p => [
-            p.file.link,                    // 제목 (노트 제목을 링크로 표시)
-            p.link || "N/A",               // 링크 (frontmatter의 link 속성)
-            p["연구 목적"] || "N/A",        // 연구 목적
-            p["연구 방법"] || "N/A",        // 연구 방법
-            p["결과 변수"] || "N/A",        // 결과 변수
-            p["주요 결과"] || "N/A"         // 주요 결과
-        ])
-        .sort(p => p[0]) // 제목 기준으로 정렬 (선택사항)
-)
+# Profile
+[[Portfolio]]
+# Recent Notes
+``` dataview
+LIST
+WHERE file.frontmatter.publish = true
+SORT file.frontmatter.date DESC
+LIMIT 5
 ```
+# Papers
+| File                                                                                                                                                                | 링크                               | 연구 목적                                                                                                            | 연구 방법                                                                                                                                                                            | 결과 변수                                                                                                                            | 주요 결과                                                                                                                                                                           |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[AI/논문/Disco4D Disentangled 4D Human Generation and Animation from a Single Image\|Disco4D Disentangled 4D Human Generation and Animation from a Single Image]] | https://arxiv.org/abs/2409.17280 | 단일 이미지로부터 인체와 의상을 분리하여 생성하고 4D 애니메이션이 가능한 고품질 디지털 아바타를 구축하는 것                                                    | SMPL-X 모델로 인체를 표현하고 Gaussian Splatting으로 의상을 모델링하며, 확산 모델과 Identity Encoding을 활용해 분리된 표현을 학습하는 프레임워크 개발                                                                          | CLIP 유사도, PSNR, SSIM, LPIPS 등의 이미지 품질 지표와 novel view/pose 성능, 사용자 연구 평가 점수 (1-5점)                                                | 기존 방법들(DreamGaussian, LGM, SHERF) 대비 생성 품질과 의상 분리 능력에서 우수한 성능을 달성하였으며, 4D 애니메이션과 세밀한 편집 기능을 성공적으로 구현                                                                            |
+| [[AI/논문/IDOL Instant Photorealistic 3D Human Creation from a Single Image\|IDOL Instant Photorealistic 3D Human Creation from a Single Image]]                   | https://arxiv.org/abs/2412.14963 | 단일 이미지로부터 고품질의 애니메이션 가능한 3D 전신 아바타를 빠르고 정확하게 생성하는 것                                                              | 100K 다양한 인간 이미지로 구성된 HuGe100K 데이터셋과 feed-forward transformer 모델을 활용하여 3D 인간 Gaussian 표현을 예측                                                                                      | 3D 재구성의 정확도, 처리 속도, 다양한 인간 현태에 대한 일반화 성능, 애니메이션 및 편집 지원 능력                                                                       | 단일 GPU에서 1초 이내에 1K 해상도의 사실적인 3D 인간 모델을 즉싱 생성하며, 후처리 없이 직접 애니메이션과 편집이 가능                                                                                                         |
+| [[AI/논문/Any6D Model-free 6D Pose Estimation of Novel Objects\|Any6D Model-free 6D Pose Estimation of Novel Objects]]                                             | https://arxiv.org/abs/2503.18673 | 기존 방법들이 textured 3D 모델이나 다중 시점을 필요로 하는 한계를 극복하고, 단일 RGB-D 앵커 이미지만으로 새로운 객체의 6D 자세와 크기를 추정하는 model-free 프레임워크를 개발 | joint object alignment 과정을 통해 2D-3D alignment와 metric scale estimation을 향상시키고, render-and-compare 전략을 통해 pose hypotheses를 생성하고 개선하는 방법론 적용                                       | 다섯 개의 challenging 데이터셋(REAL275, Toyota-Light, HO3D, YCBINEOAT, LM-O)에서의 6D pose estimation 성능 평가                                 | 기존 state-of-the-art 방법들을 크게 상회하는 성능을 달성하며, occlusion, non-overlapping views, 다양한 조명 조건, 큰 환경 변화 상황에서도 robust한 pose estimation 성능 입증                                             |
+| [[AI/논문/FoundationPose Unified 6D Pose Estimation and Tracking of Novel Objects\|FoundationPose Unified 6D Pose Estimation and Tracking of Novel Objects]]       | https://arxiv.org/abs/2312.08344 | 새로운 객체에 대해 6D 자세 추정과 추적을 통합적으로 수행하는 foundation model 개발 (model-based와 model-free 설정 모두 지원)                       | LLM 기반 texture augmentation과 대규모 synthetic training, neural implicit representation을 통한 novel view synthesis, transformer 기반 architecture와 contrastive learning을 결합한 통합 프레임워크 구축 | AUC of ADD/ADD-S metrics, ADD-0.1d recall, BOP challenge의 VSD/MSSD/MSPD 평균 recall (AR) 점수를 통한 6D pose estimation과 tracking 성능 평가 | model-based/model-free pose estimation 및 tracking 4개 task 모두에서 기존 specialized methods 대비 큰 폭의 성능 향상을 달성하고 BOP leaderboard 1위를 기록하며 instance-level methods와 유사한 성능을 더 적은 가정으로 실현 |
+| [[AI/논문/InstructPix2Pix Learning to Follow Image Editing Instructions\|InstructPix2Pix Learning to Follow Image Editing Instructions]]                           | https://arxiv.org/abs/2211.09800 | 텍스트 지시문을 통해 이미지를 편집할 수 있는 모델을 개발하는 것으로, 사용자가 "Replace the fruits with cake"와 같은 간단한 명령어로 이미지를 수정할 수 있게 하는 것이 목표  | 대형 언어 모델(GPT-3)과 텍스트-이미지 모델(Stable Diffusion)을 결합하여 합성 학습 데이터를 생성하고, 이를 바탕으로 조건부 확산 모델(InstructPix2Pix)을 훈련시켜 텍스트 명령을 따르는 이미지 편집을 수행                                             | 모델이 텍스트 명령을 얼마나 정확히 따르는지, 원본 이미지와의 일관성을 유지하는지, 그리고 다양한 종류의 편집(스타일 변경, 객체 교체, 배경 수정 등)을 수행할 수 있는지를 평가                             | 합성 데이터로만 훈련됐음에도 실제 이미지와 사용자가 작성한 지시문에 성공적으로 일반화되어, 페인팅 스타일 변경, 객체 교체, 계절 변경, 배경 수정 등 다양한 편집을 단 몇 초 안에 수행할 수 있으며, 기존 방법들보다 높은 이미지 일관성을 유지하면서 더 정확한 편집이 가능                        |
+
+
+

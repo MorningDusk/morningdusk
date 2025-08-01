@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-07-28","modified":"2025-07-31T16:24:33.345+09:00","tags":["6d","ai","computer_vision","deep_learning","article"],"cssclasses":""}
+{"publish":true,"created":"2025-07-28","modified":"2025-08-01T10:45:05.258+09:00","tags":["6d","ai","computer_vision","deep_learning","article"],"cssclasses":""}
 ---
 
 # 1. Introduction

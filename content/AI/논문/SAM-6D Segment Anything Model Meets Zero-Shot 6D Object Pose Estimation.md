@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"SAM-6D: Segment Anything Model Meets Zero-Shot 6D Object Pose Estimation","created":"2025-06-22","modified":"2025-07-31T16:25:17.113+09:00","tags":["computer_vision","ai","article","6d"],"cssclasses":""}
+{"publish":true,"aliases":"SAM-6D: Segment Anything Model Meets Zero-Shot 6D Object Pose Estimation","created":"2025-06-22","modified":"2025-08-01T10:51:59.695+09:00","tags":["computer_vision","ai","article","6d"],"cssclasses":""}
 ---
 
 # 1. Introduction

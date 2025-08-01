@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"Text Embedding is Not All You Need: Attention Control for Text-to-Image Semantic Alignment with Text Self-Attention Maps","created":"2025-07-01","modified":"2025-07-31T16:25:20.020+09:00","tags":["computer_vision","ai","article","diffusion","text-to-image"],"cssclasses":""}
+{"publish":true,"aliases":"Text Embedding is Not All You Need: Attention Control for Text-to-Image Semantic Alignment with Text Self-Attention Maps","created":"2025-07-01","modified":"2025-08-01T10:52:34.949+09:00","tags":["computer_vision","ai","article","diffusion","text-to-image"],"cssclasses":""}
 ---
 
 # Introduction

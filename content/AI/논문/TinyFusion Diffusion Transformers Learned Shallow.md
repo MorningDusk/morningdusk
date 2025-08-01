@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"TinyFusion: Diffusion Transformers Learned Shallow","created":"2025-07-09","modified":"2025-07-31T16:25:23.228+09:00","tags":["ai","article","computer_vision","diffusion"],"cssclasses":""}
+{"publish":true,"aliases":"TinyFusion: Diffusion Transformers Learned Shallow","created":"2025-07-09","modified":"2025-08-01T10:52:59.162+09:00","tags":["ai","article","computer_vision","diffusion"],"cssclasses":""}
 ---
 
 # Introduction
