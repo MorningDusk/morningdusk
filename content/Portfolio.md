@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-04-24","modified":"2025-08-01T10:32:38.823+09:00","cssclasses":""}
+{"publish":true,"created":"2025-04-24","modified":"2025-08-01T11:24:33.729+09:00","cssclasses":""}
 ---
 
 # 👩‍💻박민선 프로필
